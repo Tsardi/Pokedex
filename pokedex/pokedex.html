@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pokedex</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1> Who's That Pokemon?</h1>
+                <form class="search-container" id="search-form">
+                    <input type="text" id="search" placeholder="search bar">
+                    <button id="search-btn" type="submit">Search</button>
+                </form>
+            </header>
+            <main>
+                <div id="pokemon-grid"></div>
+                <div id="pagination"></div>
+            </main>
+            <footer>
+                <p>2025 pokedex | using pokeAPI | Terrence Sardin</p>
+            </footer>
+        </div>
+        <div id="pokemon-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="pokemon-details"></div>
+            </div>
+        </div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
