@@ -90,7 +90,7 @@ async function displayPokemons(pokemons) {
         const pokemonCard = document.createElement('div');
         pokemonCard.className = 'pokemon-card';
         pokemonCard.innerHTML = `
-            <img src="${data.sprites.front_default}" alt="${pokemon.name}">
+            <img src="${data.sprites.front_default.replace('http:', 'https:')}" alt="${pokemon.name}">
             <div class="pokemon-name">${data.name}</div>
             <div class="pokemon-id">#${data.id}</div>
         `;
@@ -109,7 +109,7 @@ function displaySinglePokemonCard(pokemonData) {
     const pokemonCard = document.createElement('div');
     pokemonCard.className = 'pokemon-card';
     pokemonCard.innerHTML = `
-        <img src="${pokemonData.sprites.front_default}" alt="${pokemonData.name}">
+        <img src="${pokemonData.sprites.front_default.replace('http:', 'https:')}" alt="${pokemonData.name}">
         <div class="pokemon-name">${pokemonData.name}</div>
         <div class="pokemon-id">#${pokemonData.id}</div>
     `;
@@ -129,7 +129,7 @@ function displayPokemonDetails(pokemon) {
             <span>#${pokemon.id}</span>
         </div>
         <div class="pokemon-detail-content">
-            <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}">
+            <img src="${pokemon.sprites.front_default.replace('http:', 'https:')}" alt="${pokemon.name}">
             <div class="pokemon-stats">
                 <h3>Stats</h3>
                 <div class="stat-row">
