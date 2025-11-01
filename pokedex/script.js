@@ -234,33 +234,3 @@ function setupPagination() {
             if (searchInput.value) {
                 searchInput.value = '';
             }
-            fetchPokemons();
-        });
-        pagination.appendChild(nextBtn);
-    }
-}
-```
-
-This creates a complete Pokedex with:
-1. Responsive grid layout for Pokemon cards
-2. Search functionality
-3. Pagination
-4. Modal for detailed Pokemon view
-5. Clean, modern UI with hover effects
-
-The application is split into:
-- index.html (structure)
-- styles.css (presentation)
-- script.js (functionality)
-
-The Pokedex fetches data from the PokeAPI and displays Pokemon with their:
-- Name
-- Image
-- ID number
-- Stats (height, weight)
-- Abilities
-- Types
-
-Users can browse through pages of Pokemon or search for specific ones, then click any Pokemon to see more details in a modal.
-}
-```
