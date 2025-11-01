@@ -234,3 +234,8 @@ function setupPagination() {
             if (searchInput.value) {
                 searchInput.value = '';
             }
+            fetchPokemons();
+        });
+        pagination.appendChild(nextBtn);
+    }
+}
